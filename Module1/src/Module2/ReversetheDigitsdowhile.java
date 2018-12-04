@@ -12,11 +12,17 @@ public class ReversetheDigitsdowhile {
 		int n = sc.nextInt();
 		String result = "";
 		int length = String.valueOf(n).length();
-		while(length>0)
+		do
 		{
-			int temp = n / java.lang.math
-		}
-
+			int temp = (int) (n / (java.lang.Math.pow(10,(length-1))));
+			int temp1 = (int) (n % (java.lang.Math.pow(10,length-1)));
+			result =  temp+result;
+			n=temp1;
+			length--;
+		
+		}while(length>0);
+			System.out.println("Reverse the digits result=" +result);
+		sc.close();
 	}
 
 }

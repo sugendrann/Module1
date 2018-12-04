@@ -45,7 +45,7 @@ public class ReversetheDigits {
 		length--;
 		
 		}
-		System.out.println("Add the digits result=" +result);
+		System.out.println("Reverse the digits result=" +result);
 sc.close();
 
 	
