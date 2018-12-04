@@ -15,18 +15,6 @@ public class ReversetheDigits {
 		int result = 0;
 		int i = 1;
 		while (length > 0) {
-<<<<<<< HEAD
-			int temp = (int) (n / (java.lang.Math.pow(10,(length-1))));
-			int temp1 = (int) (n % (java.lang.Math.pow(10,length-1)));
-			result =  temp+result;
-			n=temp1;
-		length--;
-		
-		}
-		System.out.println("Reverse the digits result=" +result);
-sc.close();
-=======
->>>>>>> branch 'master' of https://github.com/sugendrann/Module1.git
 
 			int temp1 = (int) (n % (java.lang.Math.pow(10, i)));
 			result = temp1 + result * 10;
