@@ -19,10 +19,17 @@ public class ReversetheDigitsdowhile {
 			result =  temp+result;
 			n=temp1;
 			length--;
+<<<<<<< HEAD
 		
 		}while(length>0);
 			System.out.println("Reverse the digits result=" +result);
 		sc.close();
+=======
+		}while(length>0);
+		System.out.println("Reverse the digits result=" +result);
+		sc.close();
+
+>>>>>>> branch 'master' of https://github.com/sugendrann/Module1.git
 	}
 
 }

@@ -12,32 +12,10 @@ public class ReversetheDigits {
 		int n = sc.nextInt();
 		int length = String.valueOf(n).length();
 		System.out.println(length);
-		String result = "";
-	
-		/*while(i<=length)
-		{
-			int temp = (int) (n / (java.lang.Math.pow(10,i)));
-			int temp1 = (int) (n % (java.lang.Math.pow(10,i)));
-			result = (int) (result+(temp1*(java.lang.Math.pow(10,length)));
-			
-		}
-		
-		
-		
-		while (length >= 0) {
-			int temp2 = (int) (n % (java.lang.Math.pow(10,--length)));
-			int temp1 = (int) (n % (java.lang.Math.pow(10,i)));
-			result = result + temp1 * (int) (java.lang.Math.pow(10,length));
-			
-			
-			i++;
-		
-		}
-		System.out.println("Add the digits result=" +result);
-		sc.close();*/
-	
-
+		int result = 0;
+		int i = 1;
 		while (length > 0) {
+<<<<<<< HEAD
 			int temp = (int) (n / (java.lang.Math.pow(10,(length-1))));
 			int temp1 = (int) (n % (java.lang.Math.pow(10,length-1)));
 			result =  temp+result;
@@ -47,9 +25,19 @@ public class ReversetheDigits {
 		}
 		System.out.println("Reverse the digits result=" +result);
 sc.close();
+=======
+>>>>>>> branch 'master' of https://github.com/sugendrann/Module1.git
 
-	
-		
+			int temp1 = (int) (n % (java.lang.Math.pow(10, i)));
+			result = temp1 + result * 10;
+			n = n / 10;
+			length--;
+
+		}
+
+		System.out.println("Reverse the digits result=" + result);
+		sc.close();
+
 	}
 
 }
